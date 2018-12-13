@@ -173,8 +173,87 @@ EXAMPLES = '''
     modification_time: now
     access_time: now
 '''
-RETURN = '''
 
+RETURN = r'''
+changed:
+  description: 
+  returned:
+  type: boolean
+  sample: true
+dest: 
+  description: 
+  returned:
+  type: string
+  sample: 
+diff:
+  after:
+    path: 
+      description: 
+      returned:
+      type: string
+      sample: 
+    state:
+      description: 
+      returned:
+      type: string
+      sample: 
+  before:
+    path: 
+      description: 
+      returned:
+      type: string
+      sample: 
+    state: 
+      description: 
+      returned:
+      type: string
+      sample: 
+failed: 
+  description: 
+  returned:
+  type: boolean
+  sample: false
+gid: 
+  description: Numeric gid
+  returned: 
+  type: integer
+  sample: 200
+group: 
+  description: Textual gid
+  returned:
+  type: string
+  sample: appusers
+mode: 
+  description: 
+  returned:
+  type: string
+  sample: '0777'
+owner: bcarroll
+secontext: 
+  description: 
+  returned:
+  type: string
+  sample: unconfined_u:object_r:user_tmp_t:s0
+size: 
+  description: 
+  returned:
+  type: integer
+  sample: 11
+src: 
+  description: 
+  returned:
+  type: string
+  sample: /etc/passwd 
+state: 
+  description: 
+  returned:
+  type: string
+  sample: 
+uid: 
+  description: Numeric uid
+  returned:
+  type: string
+  sample: 200
 '''
 
 import errno
